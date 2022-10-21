@@ -5,9 +5,9 @@ const fs = require("fs");
 //readme templet
 //Description, Table of Contents, Installation, usage, license, Contributing, tests, and questions.
 const genReadme = ({title, description, installation, usage, contribution, instructions, license, github, email, badge}) =>
-`# ${title}
+`${badge}
 
-${badge}
+# ${title}
 
 ## Description
 ${description}
@@ -19,7 +19,7 @@ ${description}
 
 [Usage Information](#usage-information)
 
-[Contribution Guidelines](#contribution-guidelines)
+[Contributors](#contributors)
 
 [Test Instructions](#test-instructions)
 
@@ -36,7 +36,7 @@ ${license}
 ## Usage Information
 ${usage}
 
-## Contribution Guidelines
+## Contributors
 ${contribution}
 
 ## Test Instructions

@@ -12,7 +12,7 @@ const genReadme = ({title, description, installation, usage, contribution, instr
 ## Description
 ${description}
 
-### Table of Contents
+## Table of Contents
 [Instalation Instructions](#instalation-instructions)
 
 [License](#license)
@@ -112,7 +112,7 @@ inquirer.prompt([
     }
     answers.badge = badge;
     const readmeWrite = genReadme(answers);
-    fs.writeFile(`./readmes/README.md`, readmeWrite, (err)=>{
+    fs.writeFile(`./outputs/README.md`, readmeWrite, (err)=>{
         err ? console.log(err) : console.log("Your README has been created! check the directory!")
     })
 })
